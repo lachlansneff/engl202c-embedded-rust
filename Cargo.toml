@@ -1,0 +1,14 @@
+[package]
+name = "engl202-embedded-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m-rt = "0.6"
+panic-halt = "0.2"
+
+[dependencies.stm32f4xx-hal]
+version = "0.10"
+features = ["rt", "stm32f411"]
